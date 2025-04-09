@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Portafolio</title>
+  <style>
+      /* Reset básico */
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background-color: #181c23;
+      color: white;
+    }
+    
+    /* NAVBAR */
+    .navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #181c23;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 5rem;
+    }
+    
+    .nav-links li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+      font-size: 25px;
+    }
+    
+    .nav-links li a:hover {
+      color: #e63946;
+    }
+    
+    /* HERO SECTION */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4rem 2rem;
+      background-color: #181c23;
+    }
+    
+    .intro-text {
+      flex: 1 1 40%;
+      padding-right: 2rem;
+    }
+    
+    .intro-text h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: white;
+    }
+    
+    .intro-text span {
+      color: white;
+    }
+    
+    .subtitle {
+      font-size: 1.5rem;
+      color: #e63946;
+      margin-top: 1rem;
+    }
+    
+    .photo-section {
+      flex: 1 1 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .profile-pic {
+      width: 300px;
+      height:300px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid red;
+    }
+    
+    .social-icons {
+      display: flex;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    
+    .social-icons img {
+      width: 48px;
+      height: 48px;
+      transition: transform 0.3s ease;
+    }
+    
+    .social-icons a:hover img {
+      transform: scale(1.2);
+    }
+    
+    /* Línea roja vertical divisoria */
+  .red-divider {
+      width: 2px;
+      background-color: red;
+      height: 450px;
+      margin: 0 2rem;
+    }
+    
+    span {
+      font-size: 60px; /* Tamaño de texto más grande */
+      display: block;  /* Pasa el span a la siguiente línea */
+    }
+  </style>
+  <script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#habilidades">Habilidades informáticos</a></li>
+      <li><a href="#formacion">Formación & Certificaciones</a></li>
+      <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#proyectos">Proyectos personales</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="intro-text">
+      <h1>Hola, soy <span>Rumen Orachev</span></h1>
+      <p class="subtitle">Desarrollador de Aplicaciones Multiplataforma</p>
+    </div>
+    <div class="red-divider"></div>
+    <div class="photo-section">
+      <img src="Imagenes/IMG_0790.jpg" alt="Mi foto" class="profile-pic" />
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/rumen-orachev-orachev/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" /></a><br>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" /></a><br>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail" /></a><br>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="CV" /></a><br>
+      </div>
+    </div>
+  </header>
+</body>
+
+</html>
+  
