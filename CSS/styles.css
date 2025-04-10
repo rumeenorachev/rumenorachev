@@ -117,3 +117,110 @@
         font-size: 60px; /* Tamaño de texto más grande */
         display: block;  /* Pasa el span a la siguiente línea */
       }
+
+/* Media query para pantallas pequeñas */
+@media only screen and (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: none; /* Inicialmente ocultamos el menú */
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+
+  .nav-links li a:hover {
+    color: #e63946;
+  }
+
+  /* Añadir un botón de menú hamburguesa */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+    margin-top: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .social-icons {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .social-icons img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Aquí es donde ocultamos la línea roja en pantallas pequeñas */
+  .red-divider {
+    display: none;
+  }
+
+  /* Ajustes para la sección hero */
+  .hero {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .intro-text {
+    flex: 1 1 100%;
+    padding-right: 0;
+    text-align: center;
+    font-size: 1.2rem;  /* Reducir el tamaño del texto */
+  }
+
+  .intro-text h1 {
+    font-size: 2.5rem;  /* Reducir el tamaño del título */
+  }
+
+  .subtitle {
+    font-size: 1.4rem;  /* Reducir el tamaño del subtítulo */
+  }
+
+  .photo-section {
+    flex: 1 1 100%;
+    margin-top: 2rem;
+  }
+
+  .profile-pic {
+    width: 200px;       /* Reducir el tamaño de la foto */
+    height: 200px;      /* Reducir el tamaño de la foto */
+    border-radius: 50%;
+  }
+
+  .social-icons {
+    flex-direction: row;
+    gap: 1.25rem;
+  }
+
+  .social-icons img {
+    width: 40px;
+    height: 40px;
+  }
+}
+/* Media query para pantallas grandes (mayores a 768px) */
+@media only screen and (min-width: 769px) {
+  .hamburger {
+    display: none; /* Oculta el icono de la hamburguesa en pantallas grandes */
+  }
+}

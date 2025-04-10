@@ -6,3 +6,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       });
     });
   });
+
+function toggleMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('active');  // Al hacer clic, se agrega o elimina la clase "active"
+}
