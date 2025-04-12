@@ -487,3 +487,10 @@
   border-radius: 50%;
   display: inline-block;
 }
+
+@media screen and (min-width: 768px) {
+  .skills-section {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+  }
+}
