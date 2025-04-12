@@ -161,9 +161,6 @@
 
   .nav-links.active {
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 1rem;
   }
 
   .social-icons {
@@ -224,8 +221,8 @@
   }
 }
 
-/* Media query para pantallas grandes (mayores a 768px) */
-@media only screen and (min-width: 1024px) {
+/* Media query para pantallas grandes (mayores a 1048px) */
+@media only screen and (min-width: 1048px) {
   .hamburger {
     display: none;
   }
