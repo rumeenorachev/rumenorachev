@@ -415,7 +415,7 @@
 @media screen and (min-width: 768px) {
   .skills-section {
     grid-template-columns: repeat(6, 1fr);
-    gap: 2.5rem;
+    gap: 2rem;
   }
 }
 
