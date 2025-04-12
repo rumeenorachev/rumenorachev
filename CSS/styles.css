@@ -154,7 +154,7 @@
   .hamburger {
     display: block;
     cursor: pointer;
-    font-size: 50px;
+    font-size: 60px;
     color: white;
     margin-top: 1rem;
   }
@@ -292,7 +292,7 @@
   font-weight: bold;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1366px) {
   .skills-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -389,7 +389,7 @@
 }
 
 /* Diseño responsive para móviles */
-@media (max-width: 768px) {
+@media (max-width: 1366px) {
   .contenedor-bloques {
     grid-template-columns: 1fr;
   }
