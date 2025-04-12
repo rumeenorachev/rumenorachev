@@ -121,7 +121,7 @@
     }    
 
 /* Media query para pantallas pequeñas */
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1024px) {
   /* Navbar */
   .navbar {
     padding: 1rem;
@@ -222,7 +222,7 @@
 }
 
 /* Media query para pantallas grandes (mayores a 992px) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1025px) {
   .hamburger {
     display: none;
   }
