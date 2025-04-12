@@ -306,13 +306,13 @@
 }
 
 @media only screen and (max-width: 1366px) {
-  /*.skills-section {
+  .skills-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     justify-items: center;
     padding: 2rem 1rem;
-  }*/
+  }
 
   .skill {
     max-width: 150px;
@@ -415,6 +415,13 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .skills-section {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+  }
+}
+
 #certificaciones {
   background-color: #181c23;
   color: white;
@@ -488,14 +495,7 @@
   display: inline-block;
 }
 
-@media screen and (min-width: 768px) {
-  .skills-section {
-    grid-template-columns: repeat(6, 1fr);
-    gap: 2rem;
-  }
-}
-
-/* Para móviles pequeños (menos de 768px) — 2 columnas */
+/* Para móviles pequeños (menos de 768px) — 2 columnas
 @media screen and (max-width: 767px) {
   .skills-section {
     display: grid;
@@ -506,7 +506,7 @@
   }
 }
 
-/* Para tablets verticales y móviles grandes (768px a 1024px) — 6 columnas */
+/* Para tablets verticales y móviles grandes (768px a 1024px) — 6 columnas
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .skills-section {
     display: grid;
@@ -517,7 +517,7 @@
   }
 }
 
-/* Para pantallas grandes (>1024px) — 6 columnas también */
+/* Para pantallas grandes (>1024px) — 6 columnas también
 @media screen and (min-width: 1025px) {
   .skills-section {
     display: grid;
@@ -528,7 +528,7 @@
   }
 }
 
-/* Por defecto (móviles pequeños): 2 columnas */
+/* Por defecto (móviles pequeños): 2 columnas
 @media screen and (max-width: 767px) {
   .skills-section {
     display: grid !important;
@@ -539,7 +539,7 @@
   }
 }
 
-/* Tablet vertical y horizontal (768px a 1024px): 6 columnas */
+/* Tablet vertical y horizontal (768px a 1024px): 6 columnas
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .skills-section {
     display: grid !important;
@@ -550,7 +550,7 @@
   }
 }
 
-/* Pantallas grandes (>1024px): 6 columnas */
+/* Pantallas grandes (>1024px): 6 columnas
 @media screen and (min-width: 1025px) {
   .skills-section {
     display: grid !important;
@@ -559,4 +559,4 @@
     justify-items: center;
     padding: 4rem 2rem;
   }
-}
+}*/
