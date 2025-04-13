@@ -653,18 +653,36 @@
   color: #e63946;
 }
 
-@media screen and (max-width: 768px) {
-  .proyecto-personal {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .proyecto-descripcion {
-    font-size: 1rem;
-  }
-}
-
 #proyectos .contenidos {
   max-width: 1300px;
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .proyecto-personal {
+    flex-direction: column !important;
+    align-items: center;
+    text-align: center;
+  }
+
+  .proyecto-img,
+  .proyecto-descripcion {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .proyecto-img img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+  }
+
+  .proyecto-descripcion {
+    padding: 0 20px;
+    font-size: 1rem;
+  }
+
+  .proyecto-descripcion h3 {
+    font-size: 1.5rem;
+  }
 }
