@@ -359,7 +359,6 @@
 .bloque h3 {
   font-size: 25px;
   margin-bottom: 20px;
-  color: #e63946;
 }
 
 .iconos {
@@ -560,13 +559,12 @@
 }
 
 .entrada h3 {
-  color: #e63946;
   margin-bottom: 8px;
   font-size: 1.25rem;
 }
 
 .entrada .fecha {
-  color: white;
+  color:#e63946;
   font-weight: bold;
   display: block;
   margin-bottom: 10px;
