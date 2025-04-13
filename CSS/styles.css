@@ -581,3 +581,14 @@
 .certificacion span {
   color: white;
 }
+
+@media (min-width: 481px) and (max-width: 900px) and (orientation: portrait),
+       (min-width: 568px) and (max-width: 900px) and (orientation: landscape) {
+
+  .certificaciones-grid .certificacion {
+    min-height: 460px; /* fuerza altura suficiente para que todas se alineen */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
