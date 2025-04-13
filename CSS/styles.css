@@ -334,13 +334,13 @@
 
 .habilidades {
   background-color: #181c23;
-  padding: 30px 20px;
   text-align: center;
   color: white;
 }
 
 .titulo-seccion {
   font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .contenedor-bloques {
@@ -432,7 +432,7 @@
 #certificaciones {
   background-color: #181c23;
   color: white;
-  padding: 30px 20px;
+  padding: 60px 20px;
   text-align: center;
 }
 
@@ -524,6 +524,7 @@
 .entrada {
   position: relative;
   padding-left: 40px;
+  margin-top: 50px;
 }
 
 .contenido:hover {
