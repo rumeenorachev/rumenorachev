@@ -438,6 +438,22 @@
   }
 }
 
+@media screen and (min-width: 769px) and (max-width: 1090px) {
+  .bloque {
+    margin: 0 20px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+
+  .iconos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 90px;
+    justify-items: center;
+  }
+}
+
+
 @media screen and (orientation: landscape) {
   .skills-section {
     grid-template-columns: repeat(6, 1fr);
