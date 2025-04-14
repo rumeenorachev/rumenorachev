@@ -421,6 +421,7 @@
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 10px !important;
     justify-items: center;
+    margin-bottom: 20px;
   }
 
   .icono {
