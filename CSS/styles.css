@@ -124,7 +124,7 @@
 @media only screen and (max-width: 1366px) {
   /* Navbar */
   .navbar {
-    padding: 1rem;
+    padding: 0rem;
     flex-direction: column;
     align-items: center;
   }
@@ -135,7 +135,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 
   .nav-links li a {
@@ -154,9 +154,9 @@
   .hamburger {
     display: block;
     cursor: pointer;
-    font-size: 60px;
+    font-size: 50px;
     color: white;
-    margin-top: 1rem;
+    margin-top: 0rem;
   }
 
   .nav-links.active {
@@ -695,4 +695,36 @@
 #proyectos .contenidos {
   max-width: 1300px;
   width: 100%;
+}
+
+.nav-tools {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+/* Estilo del botón de idioma */
+.language-toggle a {
+  color: white;
+  border: 1px solid #e63946;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.3s;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.language-toggle a:hover {
+  background-color: #e63946;
+}
+
+/* Solo mostrar esto en móviles */
+@media only screen and (min-width: 1367px) {
+  .nav-tools {
+    display: none;
+  }
 }
