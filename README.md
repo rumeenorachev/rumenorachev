@@ -1,6 +1,6 @@
 🌐 Portfolio Web
 
-Este portfolio es un sitio web estático que presenta mi perfil como desarrollador web. Incluye información sobre mis habilidades, proyectos personales y académicos, y formas de contacto. Está diseñado para ser claro, responsive y accesible, y se ofrece en dos idiomas: español e inglés.
+Este portfolio es un sitio web estático que presenta mi perfil como desarrollador multiplataforma. Incluye información sobre mis habilidades, proyectos personales y académicos, y formas de contacto. Está diseñado para ser claro, responsive y accesible, y se ofrece en dos idiomas: español e inglés.
 
 🌍 Sitio en línea  
 👉 Visita el portfolio en [rumenorachev.es](https://www.rumenorachev.es)
