@@ -757,3 +757,11 @@ background-color: #e63946;
 display: none;
 }
 }
+
+.video-embed {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #e63946;
+}
