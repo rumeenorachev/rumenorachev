@@ -211,9 +211,11 @@ border-radius: 50%;
 }
 
 .social-icons {
-flex-direction: row;
-gap: 1.25rem;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
 }
+
 
 .social-icons img {
 width: 40px;
