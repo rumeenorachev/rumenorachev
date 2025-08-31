@@ -766,3 +766,9 @@ display: none;
   border-radius: 12px;
   box-shadow: 0 0 20px #e63946;
 }
+
+@media only screen and (max-width: 768px) {
+  #experiencia {
+    padding: 0 20px; /* Espaciado lateral para evitar que se vea pegado */
+  }
+}
