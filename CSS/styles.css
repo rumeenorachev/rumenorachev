@@ -772,3 +772,26 @@ display: none;
     padding: 0 20px; /* Espaciado lateral para evitar que se vea pegado */
   }
 }
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 10px;
+  background-color: black;
+  font-family: 'Orbitron', sans-serif;
+}
+
+footer p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+/* Quitar espacio extra antes del footer */
+#proyectos {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.proyecto-personal:last-of-type {
+  margin-bottom: 5px !important;
+}
