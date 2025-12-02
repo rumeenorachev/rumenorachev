@@ -785,13 +785,3 @@ footer p {
   font-size: 0.8rem;
   margin: 0;
 }
-
-/* Quitar espacio extra antes del footer */
-#proyectos {
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-.proyecto-personal:last-of-type {
-  margin-bottom: 5px !important;
-}
