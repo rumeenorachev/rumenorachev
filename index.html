@@ -243,38 +243,95 @@
     </div>
   </section>
 
-  <section id="proyectos">
-    <div class="contenidos">
+  <section id="proyectos" class="proyectos-section">
+    <div class="proyectos-wrap">
       <h2 class="titulo-seccion">Proyectos Personales</h2>
-      <p class="subtitulo-seccion">Además de <a href="https://github.com/rumeenorachev/rumenorachev" target="_blank" class="rojo">este sitio web</a>, también estoy trabajando en otros <span class="rojo">proyectos</span>. Aquí hay algunos de ellos:</p>
-      
-      <div class="proyecto-personal">
-        <div class="proyecto-descripcion">
-          <h3><span class="rojo">RumFit</span></h3> 
-          <p>
-            <span class="rojo">RumFit</span> es una aplicación móvil diseñada para gestionar tus rutinas de entrenamiento de forma sencilla. Permite crear <span class="rojo">rutinas personalizadas</span>, llevar un <span class="rojo">control de tus ejercicios</span> y ver tu <span class="rojo">progreso semanal</span>. Desarrollada en <span class="rojo">Kotlin + MVVM</span>, ofrece una experiencia fluida y moderna, siendo actualmente <span class="rojo">plenamente funcional</span> pero en <span class="rojo">desarrollo activo.</span>.
-          </p>
-        </div>
-        <div class="proyecto-img">
-          <img src="Imagenes/rumfit_mockup.png" alt="RumFit" />
-        </div>
-      </div>
-      <p class="subtitulo-seccion"><a href="https://github.com/rumeenorachev/RumFit-Public" target="_blank" class="rojo">Repositorio GitHub</a> | <a href="ApkAndroid/RumFit.apk" target="_blank" class="rojo">Instalar App</a></p>
+      <p class="subtitulo-seccion proyectos-intro">
+        Además de
+        <a href="https://github.com/rumeenorachev/rumenorachev" target="_blank" class="rojo">este sitio web</a>,
+        también estoy trabajando en otros <span class="rojo">proyectos</span>. Aquí hay algunos de ellos:
+      </p>
 
-      <div class="proyecto-personal">
-        <div class="proyecto-descripcion">
-          <h3><span class="rojo">LA CAFFETTIERA DE RUMEN</span></h3> 
+      <article class="proyecto-hero">
+        <div class="proyecto-hero-texto">
+          <h3>SaaS de Gestión Académica</h3>
+          <p class="proyecto-hero-subtitulo">
+            Primera implantación real en <span class="rojo">Diaspora Languages</span>
+          </p>
+
           <p>
-            <span class="rojo">La Caffettiera de Rumen</span> es una aplicación web responsive creada con <span class="rojo">Django</span> que simula la página de un café moderno. Incluye una sección de productos, formulario de contacto funcional y panel de administración. El proyecto demuestra el <span class="rojo">desarrollo completo con backend en Python/Django y su despliegue en producción.</span>
+            Este proyecto es una <span class="rojo">plataforma SaaS de gestión académica</span> orientada a academias de idiomas.
+            Su primera implantación real ha sido en <span class="rojo">Diaspora Languages</span>, donde alumnos y profesores pueden acceder
+            a un <span class="rojo">inicio personalizado</span>, <span class="rojo">tablón de anuncios</span>,
+            <span class="rojo">chat de clase</span>, <span class="rojo">resultados y exámenes</span> y
+            <span class="rojo">facturas con PDF</span>. Ha sido desarrollada con
+            <span class="rojo">Flutter + Django REST Framework</span>, integrando frontend móvil, backend,
+            autenticación y lógica de negocio real.
           </p>
         </div>
-        <div class="proyecto-img">
-          <img src="Imagenes/cafe.png" alt="WEB CAFÉ" />
+
+        <div class="proyecto-hero-media">
+          <img src="Imagenes/diaspora-saas-preview.png" alt="SaaS de gestión académica implementado en Diaspora Languages">
         </div>
+
+        <div class="proyecto-hero-badges">
+          <a href="https://apps.apple.com/us/app/diaspora-languages/id6760665894?l=es-MX" target="_blank" rel="noopener noreferrer">
+            <img src="Imagenes/app-store-badge.svg" alt="Descargar en App Store">
+          </a>
+
+          <a href="https://play.google.com/store/apps/details?id=es.rumenorachev.diaspora&hl=es" target="_blank" rel="noopener noreferrer">
+            <img src="Imagenes/google-play-badge.png" alt="Disponible en Google Play">
+          </a>
+        </div>
+      </article>
+
+      <div class="proyectos-grid">
+        <article class="proyecto-card">
+          <div class="proyecto-card-texto">
+            <h3>RumFit</h3>
+            <p>
+              <span class="rojo">RumFit</span> es una aplicación móvil diseñada para gestionar rutinas de entrenamiento
+              de forma sencilla. Permite crear <span class="rojo">rutinas personalizadas</span>, llevar un
+              <span class="rojo">control de ejercicios</span> y ver el <span class="rojo">progreso semanal</span>.
+              Desarrollada en <span class="rojo">Kotlin + MVVM</span>, ofrece una experiencia fluida y moderna.
+            </p>
+          </div>
+
+          <div class="proyecto-card-media">
+            <img src="Imagenes/rumfit_mockup.png" alt="RumFit">
+          </div>
+
+          <p class="proyecto-card-links">
+            <a href="https://github.com/rumeenorachev/RumFit-Public" target="_blank" class="rojo">Repositorio GitHub</a>
+            <span>|</span>
+            <a href="ApkAndroid/RumFit.apk" target="_blank" class="rojo">Instalar App</a>
+          </p>
+        </article>
+
+        <article class="proyecto-card">
+          <div class="proyecto-card-texto">
+            <h3>La Caffettiera de Rumen</h3>
+            <p>
+              <span class="rojo">La Caffettiera de Rumen</span> es una aplicación web responsive creada con
+              <span class="rojo">Django</span> que simula la página de un café moderno. Incluye productos,
+              formulario de contacto funcional y panel de administración, mostrando el
+              <span class="rojo">desarrollo completo con backend en Python/Django y su despliegue en producción</span>.
+            </p>
+          </div>
+
+          <div class="proyecto-card-media">
+            <img src="Imagenes/cafe.png" alt="La Caffettiera de Rumen">
+          </div>
+
+          <p class="proyecto-card-links">
+            <a href="https://github.com/rumeenorachev/webcafe" target="_blank" class="rojo">Repositorio GitHub</a>
+            <span>|</span>
+            <a href="https://webcafe-foio.onrender.com/" target="_blank" class="rojo">Acceso Web</a>
+          </p>
+        </article>
       </div>
-      <p class="subtitulo-seccion"><a href="https://github.com/rumeenorachev/webcafe" target="_blank" class="rojo">Repositorio GitHub</a> | <a href="https://webcafe-foio.onrender.com/" target="_blank" class="rojo">Acceso Web</a></p>
     </div>
-  </section>  
+  </section>
   
   <footer>
     <script src="JavaScript/scripts.js"></script>
