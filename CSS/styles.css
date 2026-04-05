@@ -257,6 +257,13 @@ section {
 
 /* Media query para pantallas pequeñas */
 @media only screen and (max-width: 1366px) {
+  body {
+    background:
+      radial-gradient(circle at top left, rgba(230, 57, 70, 0.06), transparent 18%),
+      radial-gradient(circle at top right, rgba(255, 66, 84, 0.05), transparent 16%),
+      linear-gradient(180deg, #161a21 0%, #181c23 34%, #151920 100%);
+  }
+
   .navbar {
     justify-content: center;
     padding: 0.9rem 1rem;
@@ -337,6 +344,8 @@ section {
   .hero {
     flex-direction: column;
     padding: 2.5rem 1rem 2rem;
+    background: transparent;
+    border-radius: 28px;
   }
 
   .intro-text {
