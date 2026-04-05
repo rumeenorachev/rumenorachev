@@ -377,18 +377,19 @@ section {
 
   .social-icons {
     flex-direction: row;
-    gap: 1rem;
+    gap: 0.65rem;
     justify-content: center;
+    flex-wrap: nowrap;
   }
 
   .social-icons img {
-    width: 32px;
-    height: 32px;
+    width: 26px;
+    height: 26px;
   }
 
   .social-icons a {
-    width: 68px;
-    height: 68px;
+    width: 56px;
+    height: 56px;
   }
 
   .skills-section {
@@ -1365,14 +1366,15 @@ a.rojo:hover {
   }
 
   .proyecto-hero-badges {
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 12px;
     width: auto;
-    gap: 16px;
+    gap: 12px;
+    flex-wrap: nowrap;
   }
 
   .proyecto-hero-badges img {
-    height: 60px;
+    height: 48px;
   }
 
   .proyecto-card {
@@ -1391,24 +1393,30 @@ a.rojo:hover {
 
 .nav-tools {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  margin-top: 0.4rem;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 0;
 }
 
 /* Estilo del botón de idioma */
 .language-toggle a {
   color: var(--text);
   border: 2px solid rgba(230, 57, 70, 0.42);
-  padding: 8px 12px;
+  width: 60px;
+  height: 60px;
   text-decoration: none;
-  border-radius: 999px;
+  border-radius: 18px;
   font-weight: bold;
   font-size: 1rem;
   transition: background 0.3s;
-  display: inline-block;
-  margin-bottom: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
   background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0 0 22px rgba(230, 57, 70, 0.14);
 }
 
 .language-toggle a:hover {

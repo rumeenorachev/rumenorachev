@@ -34,7 +34,11 @@
       <li><a href="#proyectos">Personal projects</a></li>
     </ul>
     <div class="nav-tools">
-      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+      <button class="hamburger" type="button" onclick="toggleMenu()" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <div class="language-toggle">
         <a href="index.html">ES</a>
       </div>
@@ -51,13 +55,13 @@
     </div>
     <div class="red-divider"></div>
     <div class="photo-section">
-      <img src="Imagenes/foto.JPG" alt="Mi foto" class="profile-pic" />
+      <img src="Imagenes/foto.JPG" alt="My photo" class="profile-pic" />
       <div class="social-icons">
-        <a href="https://www.linkedin.com/in/rumenorachev/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" /></a><br>
-        <a href="https://github.com/rumeenorachev" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968896.png" alt="GitHub" /></a><br>
-        <a href="Documentos/RUMEN-CV-EN.pdf" target="_blank"><img src="Imagenes/cvrojo.png" alt="CV" /></a><br>
-        <a href="Imagenes/contacto.png" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Contact" /></a><br>
-        <a href="https://create.kahoot.it/profiles/f88c9eed-8f76-4602-b09c-600224555d78" target="_blank"><img src="Imagenes/kahoot.png" alt="Kahoot" /></a><br>
+        <a href="https://www.linkedin.com/in/rumenorachev/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" /></a>
+        <a href="https://github.com/rumeenorachev" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968896.png" alt="GitHub" /></a>
+        <a href="Documentos/RUMEN-CV-EN.pdf" target="_blank"><img src="Imagenes/cvrojo.png" alt="CV" /></a>
+        <a href="Imagenes/contacto.png" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Contact" /></a>
+        <a href="https://create.kahoot.it/profiles/f88c9eed-8f76-4602-b09c-600224555d78" target="_blank"><img src="Imagenes/kahoot.png" alt="Kahoot" /></a>
       </div>
     </div>
   </header>
@@ -93,53 +97,71 @@
   <section id="sobre-mi" class="sobre-mi">
     <div class="sobre-mi-content">
       <h2>About me</h2>
-      <p>I'm <span class="highlight">Rumen Orachev</span>, developer with training in <span class="highlight2">Multiplatform and Web Applications</span> and hands-on experience in real <span class="highlight2">frontend and backend projects</span>.</p>
-      <p>I'm expanding my knowledge in <span class="highlight2">cloud computing</span> (preparing for the <span class="highlight2">AWS Solutions Architect – Associate</span> certification).</p>
-      <p>Passionate about <span class="highlight2">technology and software development</span>, I'm looking to continue growing with projects that represent a challenge and an opportunity to learn.</p>
+      <p>I’m <span class="highlight">Rumen Orachev</span>, a <span class="highlight2">Full Stack developer with a backend focus</span>, currently doing an internship at <span class="highlight2">GFT Technologies</span>.</p>
+      <p>I have <span class="highlight2">training in Multiplatform and Web Application Development</span>, hands-on experience in real projects, and a <span class="highlight2">certified C1 level of English</span>.</p>
+      <p>Discover more about my profile, technologies, and experience in the sections below.</p>
     </div>
   </section>
 
   <section id="habilidades" class="habilidades">
-    <h2 class="titulo-seccion">IT skills</h2><br>
+    <div class="skills-header">
+      <h2 class="titulo-seccion">Tech Stack & Core Capabilities</h2>
+      <p class="skills-lead">
+        I organize my profile around <span class="rojo">backend</span>, web development, Python
+        technologies, and real-world tools I use to build and maintain products.
+      </p>
+    </div>
   
     <div class="contenedor-bloques">
-      <!-- Bloque 1: Lenguajes de programación -->
       <div class="bloque">
-        <h3>Programming Languages</h3>
+        <h3>Backend</h3>
+        <p class="bloque-descripcion">
+          Technologies and practices I use to build business logic, APIs, and backend services.
+        </p>
         <div class="iconos">
           <div class="icono"><i class="fab fa-java icon-java"></i><span>Java</span></div>
-          <div class="icono"><i class="fab fa-js-square icon-js"></i><span>JavaScript</span></div>
+          <div class="icono"><i class="fas fa-leaf icon-springboot"></i><span>Spring Boot</span></div>
           <div class="icono"><i class="fab fa-python icon-python"></i><span>Python</span></div>
-          <div class="icono"><i class="fab fa-php icon-php"></i><span>PHP</span></div>
+          <div class="icono"><i class="fas fa-feather-pointed icon-django"></i><span>Django</span></div>
         </div>
       </div>
   
-      <!-- Bloque 2: Desarrollo Web -->
       <div class="bloque">
-        <h3>Web Development</h3>
+        <h3>Web & Product</h3>
+        <p class="bloque-descripcion">
+          Interfaces, dashboards, and web product work with a focus on experience and maintainability.
+        </p>
         <div class="iconos">
-          <div class="icono"><i class="fab fa-html5 icon-html5"></i><span>HTML</span></div>
-          <div class="icono"><i class="fab fa-css3-alt icon-css3"></i><span>CSS</span></div>
-        </div>
-      </div>
-  
-      <!-- Bloque 3: Frameworks -->
-      <div class="bloque">
-        <h3>Frameworks</h3>
-        <div class="iconos">
-          <div class="icono"><i class="fas fa-leaf icon-springboot"></i><span>Spring</span></div>
-          <div class="icono"><i class="fab fa-laravel icon-laravel"></i><span>Laravel</span></div>
           <div class="icono"><i class="fab fa-vuejs icon-vuejs"></i><span>Vue 3</span></div>
-          <div class="icono"><i class="fab fa-node icon-laravel"></i><span>Node.js</span></div>
+          <div class="icono"><i class="fab fa-laravel icon-laravel"></i><span>Laravel</span></div>
+          <div class="icono"><i class="fab fa-php icon-php"></i><span>PHP</span></div>
+          <div class="icono"><i class="fas fa-code icon-web"></i><span>HTML/CSS</span></div>
         </div>
       </div>
   
-      <!-- Bloque 4: Bases de Datos -->
       <div class="bloque">
-        <h3>Other Tools</h3>
+        <h3>APIs & Data</h3>
+        <p class="bloque-descripcion">
+          Service integration, persistence, and data work in real-world applications.
+        </p>
         <div class="iconos">
-          <div class="icono"><i class="fab fa-git-alt"></i><span>Git</span></div>
+          <div class="icono"><i class="fas fa-plug icon-rest"></i><span>REST APIs</span></div>
           <div class="icono"><i class="fas fa-database icon-mysql"></i><span>MySQL</span></div>
+          <div class="icono"><i class="fas fa-table icon-sql"></i><span>SQL</span></div>
+          <div class="icono"><i class="fab fa-git-alt icon-git"></i><span>Git</span></div>
+        </div>
+      </div>
+  
+      <div class="bloque">
+        <h3>Mobile & Tools</h3>
+        <p class="bloque-descripcion">
+          Supporting stack for mobile apps, version control, and day-to-day technical work.
+        </p>
+        <div class="iconos">
+          <div class="icono"><i class="fas fa-mobile-alt icon-flutter"></i><span>Flutter</span></div>
+          <div class="icono"><i class="fab fa-android icon-android"></i><span>Android</span></div>
+          <div class="icono"><i class="fab fa-github icon-github"></i><span>GitHub</span></div>
+          <div class="icono"><i class="fas fa-diagram-project icon-architecture"></i><span>Architecture</span></div>
         </div>
       </div>
     </div>
@@ -258,27 +280,41 @@
         <h3>Academic Management SaaS</h3>
 
         <p>
-          <span class="rojo">SaaS academic management platform</span> for language academies, deployed at 
+          <span class="rojo">Academic management SaaS platform</span> for language academies, deployed at 
           <a href="https://diasporalanguages.com/" target="_blank" class="rojo">Diaspora Languages</a>. 
           It provides students and teachers with a <span class="rojo">personalized dashboard</span>, 
           <span class="rojo">notice board</span>, <span class="rojo">class chat</span>, 
           <span class="rojo">exams and results</span>, and <span class="rojo">invoicing</span>. 
           Built with <span class="rojo">Flutter + Django REST Framework</span>, integrating mobile frontend, backend, and real business logic.
         </p>
+
+        <div class="proyecto-hero-invite">
+          <div class="invite-copy">
+            <span class="invite-kicker">Sample class</span>
+            <p>
+              Access the sample class by registering with ID
+              <span class="invite-dni">12345678A</span>.
+            </p>
+          </div>
+
+          <a href="https://api.rumenorachev.es/invite/zh4rwTOhIOtJp128k9WbPA/" target="_blank" rel="noopener noreferrer" class="invite-link">
+            Join the class
+          </a>
+        </div>
+
+        <div class="proyecto-hero-badges">
+          <a href="https://apps.apple.com/app/diaspora-languages/id6760665894" target="_blank" rel="noopener noreferrer">
+            <img src="Imagenes/app-store-badge-en.svg" alt="Download on App Store">
+          </a>
+
+          <a href="https://play.google.com/store/apps/details?id=es.rumenorachev.diaspora&hl=es" target="_blank" rel="noopener noreferrer">
+            <img src="Imagenes/google-play-badge-en.png" alt="Get it on Google Play">
+          </a>
+        </div>
       </div>
 
       <div class="proyecto-hero-media">
-        <img src="Imagenes/diaspora-saas-preview.png" alt="Academic SaaS implemented at Diaspora Languages">
-      </div>
-
-      <div class="proyecto-hero-badges">
-        <a href="https://apps.apple.com/app/diaspora-languages/id6760665894" target="_blank" rel="noopener noreferrer">
-          <img src="Imagenes/app-store-badge-en.svg" alt="Download on App Store">
-        </a>
-
-        <a href="https://play.google.com/store/apps/details?id=es.rumenorachev.diaspora&hl=es" target="_blank" rel="noopener noreferrer">
-          <img src="Imagenes/google-play-badge-en.png" alt="Get it on Google Play">
-        </a>
+        <img src="Imagenes/Mockup Diaspora.png" alt="Academic SaaS implemented at Diaspora Languages">
       </div>
     </article>
 
