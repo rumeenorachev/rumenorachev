@@ -24,6 +24,7 @@
   --radius-lg: 28px;
   --radius-md: 18px;
   --radius-sm: 12px;
+  --page-max: 1320px;
 }
 
 html {
@@ -69,7 +70,9 @@ section {
 .nav-links {
   list-style: none;
   display: flex;
+  justify-content: space-between;
   gap: 1rem;
+  width: min(100%, var(--page-max));
   padding: 0.45rem;
   border: 2px solid rgba(230, 57, 70, 0.28);
   border-radius: 999px;
@@ -152,7 +155,7 @@ section {
   align-items: center;
   gap: 2.5rem;
   padding: 5rem 2rem 4.5rem;
-  max-width: 1320px;
+  max-width: var(--page-max);
   margin: 0 auto 1.5rem;
 }
 
@@ -403,10 +406,11 @@ section {
 
   .skills-section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 18px;
     justify-items: center;
-    padding: 2rem 1rem;
+    padding: 22px 0 30px;
+    width: calc(100% - 40px);
   }
 
   .skill {
@@ -436,7 +440,7 @@ section {
 }
 
 .sobre-mi-content {
-  max-width: 1080px;
+  max-width: var(--page-max);
   margin: 0 auto;
   padding: 44px 38px;
   text-align: center;
@@ -477,13 +481,13 @@ section {
 }
 
 .skills-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   text-align: center;
   gap: 18px;
-  padding: 22px 20px 30px;
-  max-width: 1180px;
+  padding: 22px 0 30px;
+  max-width: var(--page-max);
+  width: calc(100% - 40px);
   margin: 0 auto;
 }
 
@@ -493,7 +497,7 @@ section {
   align-items: center;
   justify-content: center;
   color: var(--text);
-  width: 160px;
+  width: 100%;
   min-height: 136px;
   padding: 18px 14px;
   border: 1px solid rgba(230, 57, 70, 0.24);
@@ -521,17 +525,18 @@ section {
   line-height: 1.35;
 }
 
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 768px) {
   .skills-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     justify-items: center;
-    padding: 2rem 1rem;
+    padding: 2rem 0;
+    width: calc(100% - 32px);
   }
 
   .skill {
-    max-width: 150px;
+    max-width: none;
   }
 
   .skill i {
@@ -574,7 +579,7 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
-  max-width: 1320px;
+  max-width: var(--page-max);
   margin: 0 auto;
   justify-items: center;
 }
@@ -582,6 +587,7 @@ section {
 .bloque {
   position: relative;
   overflow: hidden;
+  width: 100%;
   border: 2px solid rgba(230, 57, 70, 0.28);
   border-radius: 30px;
   padding: 34px 32px;
@@ -750,14 +756,14 @@ section {
   }
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (min-width: 769px) and (orientation: landscape) {
   .skills-section {
     grid-template-columns: repeat(6, 1fr);
     gap: 2rem;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .skills-section {
     grid-template-columns: repeat(6, 1fr);
     gap: 2rem;
@@ -766,7 +772,7 @@ section {
 
 #certificaciones {
   color: var(--text);
-  padding: 72px 20px;
+  padding: 42px 20px 38px;
   text-align: center;
 }
 
@@ -792,7 +798,7 @@ section {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 40px;
-  max-width: 1300px;
+  max-width: var(--page-max);
   margin: 0 auto;
 }
 
@@ -895,20 +901,20 @@ section {
 
 #experiencia {
   text-align: center;
-  padding: 26px 20px 10px;
+  padding: 10px 20px 10px;
 }
 
 .linea-tiempo {
   position: relative;
   margin: 0 auto;
   padding-left: 0;
-  max-width: 1180px;
+  max-width: var(--page-max);
 }
 
 .entrada {
   position: relative;
   padding-left: 40px;
-  margin-top: 50px;
+  margin-top: 32px;
 }
 
 .contenido:hover {
@@ -1005,7 +1011,7 @@ a.rojo:hover {
 }
 
 .proyectos-wrap {
-  max-width: 1240px;
+  max-width: var(--page-max);
   margin: 0 auto;
 }
 
