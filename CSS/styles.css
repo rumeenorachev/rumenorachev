@@ -472,6 +472,10 @@ section {
   color: var(--text-soft);
 }
 
+.sobre-mi-content p:last-child {
+  margin-bottom: 0;
+}
+
 .highlight {
   color: #e63946;
   font-weight: bold;
@@ -561,12 +565,6 @@ section {
   text-align: center;
 }
 
-.skills-lead {
-  font-size: 1.08rem;
-  line-height: 1.9;
-  color: var(--text-soft);
-}
-
 .titulo-seccion {
   color: var(--text);
   font-size: 2.5rem;
@@ -624,14 +622,6 @@ section {
   font-size: 2rem;
   margin-bottom: 14px;
   color: var(--accent-strong);
-  text-align: center;
-}
-
-.bloque-descripcion {
-  margin-bottom: 24px;
-  color: var(--text-soft);
-  font-size: 1rem;
-  line-height: 1.8;
   text-align: center;
 }
 
@@ -708,11 +698,6 @@ section {
 @media screen and (max-width: 768px) {
   .skills-header {
     margin-bottom: 30px;
-  }
-
-  .skills-lead {
-    font-size: 0.98rem;
-    line-height: 1.8;
   }
 
   .iconos {
@@ -1003,7 +988,7 @@ a.rojo:hover {
 
 #proyectos {
   width: 100%;
-  padding: 28px 24px 72px;
+  padding: 38px 24px 72px;
   color: var(--text);
 }
 
@@ -1243,6 +1228,9 @@ a.rojo:hover {
 }
 
 .proyecto-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   background: rgba(255, 255, 255, 0.02);
   border: 2px solid rgba(230, 57, 70, 0.26);
   border-radius: 22px;
@@ -1263,6 +1251,7 @@ a.rojo:hover {
 
 .proyecto-card-texto {
   text-align: left;
+  min-height: 230px;
 }
 
 .proyecto-card-texto h3 {
@@ -1280,14 +1269,17 @@ a.rojo:hover {
 }
 
 .proyecto-card-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 340px;
   margin-top: 18px;
 }
 
 .proyecto-card-media img {
-  width: auto;
+  width: 100%;
   max-width: 100%;
-  max-height: 360px;
-  height: auto;
+  height: 100%;
   object-fit: contain;
   display: block;
   margin: 0 auto;
@@ -1437,6 +1429,14 @@ a.rojo:hover {
 
   .proyecto-card-texto h3 {
     font-size: 1.55rem;
+  }
+
+  .proyecto-card-texto {
+    min-height: 0;
+  }
+
+  .proyecto-card-media {
+    height: min(52vw, 260px);
   }
 
   .proyecto-card-texto,
