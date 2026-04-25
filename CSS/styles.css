@@ -56,6 +56,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
   width: 100%;
   max-width: 100%;
   padding: 1.1rem 3rem;
@@ -72,7 +73,8 @@ section {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  width: min(100%, var(--page-max));
+  flex: 1 1 auto;
+  max-width: calc(var(--page-max) - 76px);
   padding: 0.45rem;
   border: 2px solid rgba(230, 57, 70, 0.28);
   border-radius: 999px;
@@ -1487,10 +1489,8 @@ a.rojo:hover {
 
 /* Idioma en escritorio */
 .language-desktop {
-  position: absolute;
-  top: 50%;
-  right: 2rem;
-  transform: translateY(-50%);
+  position: static;
+  flex: 0 0 auto;
 }
 
 .language-desktop a {
