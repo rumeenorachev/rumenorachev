@@ -44,7 +44,9 @@ document.addEventListener('click', (event) => {
 });
 
 window.addEventListener('resize', () => {
-  if (window.innerWidth > 1366) {
+  const desktopNavigation = window.matchMedia('(min-width: 1025px) and (hover: hover), (min-width: 1367px)').matches;
+
+  if (desktopNavigation) {
     closeMenu();
   }
 });
